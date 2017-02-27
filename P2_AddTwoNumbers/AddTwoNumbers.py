@@ -63,6 +63,9 @@ def printNode(a):
     print(sol_str)
 
 def parseStr2Node(str_node):
+    if str_node == "":
+        return ListNode(0) 
+    
     val_list = str_node.split('->')
 
     root = ListNode(0)
